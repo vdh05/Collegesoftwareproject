@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Device Orientation Example</title>
+</head>
+<body>
+  <h1>Device Orientation Data</h1>
+  <p>Check the browser console for orientation information.</p>
+
+  <script>
+    window.addEventListener('deviceorientation', event => {
+      console.log('Alpha:', event.alpha); // Rotation along the z axis
+      console.log('Beta:', event.beta); // Rotation along the x axis
+      console.log('Gamma:', event.gamma); // Rotation along the y axis
+    }, true);
+  </script>
+</body>
+</html>
